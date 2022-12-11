@@ -1,3 +1,13 @@
 <template>
-  <h1>test</h1>
+  <div>
+    <app-button types="secondary" >hello</app-button>
+  </div>
 </template>
+
+<script>
+import AppButton from './components/button/button.vue';
+
+export default {
+components: {AppButton}
+}
+</script>
