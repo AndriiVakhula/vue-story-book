@@ -32,5 +32,19 @@ export default {
 </script>
 
 <style>
+.btn-primary {
+    background: blue;
+}
 
+.btn-secondary {
+    background: green;
+}
+
+.btn-tertiary {
+    background: yellow;
+}
+
+.btn-ghost {
+    background: transparent;
+}
 </style>
