@@ -1,7 +1,7 @@
-import Button from './button.vue';
+import TButton from './button.vue';
 import { buttonTypeOptions } from './constants';
 
-const defaultValue = (prop) => Button.props[prop].default;
+const defaultValue = (prop) => TButton.props[prop].default;
 
 const generateProps = ({
   disabled = defaultValue('disabled'),
@@ -12,13 +12,13 @@ const generateProps = ({
 })
 
 export const Default = (args, { argTypes = {} }) => ({
-  components: { Button },
+  components: { TButton },
   props: Object.keys(argTypes),
   template:`
-    <Button
+    <t-button
       :disabled="disabled"
       :types="types"
-    >test</Button>
+    >test</t-button>
   `,
 });
 
@@ -28,7 +28,7 @@ Default.args = generateProps();
 
 export default {
   title: 'Button',
-  component: Button,
+  component: TButton,
   argTypes: {
     types: {
       options: buttonTypeOptions,

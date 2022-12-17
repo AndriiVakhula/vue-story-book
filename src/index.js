@@ -1,0 +1,1 @@
+export { default as TButton } from './components/button/button.vue';
